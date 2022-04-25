@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": " source ./config && nodemon server.js",
-    "start": "node server.js",
-    "build": "mustache-prestatic ./*.html --data ./*.json --partials ./partials/* --output public"
+    "start": "node server.js"
   },
   "engines": {
     "node": "16.x"
