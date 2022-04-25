@@ -9,6 +9,9 @@
     "start": "node server.js",
     "build": "mustache-prestatic ./*.html --data ./*.json --partials ./partials/* --output public"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
