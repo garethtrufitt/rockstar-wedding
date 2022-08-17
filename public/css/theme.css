@@ -833,11 +833,11 @@ img {
 .imagebg:not(.image--light) .bg--white h4,
 .imagebg:not(.image--light) .bg--white h5,
 .imagebg:not(.image--light) .bg--white h6 {
-  color: #232323;
+  color: #000000;
 }
 .imagebg:not(.image--light) .bg--white p,
 .imagebg:not(.image--light) .bg--white ul {
-  color: #767676;
+  color: #000000;
 }
 div[data-overlay] h1,
 div[data-overlay] h2,
@@ -941,7 +941,7 @@ a {
 .bg--white span,
 .bg--white ul,
 .bg--white a:not(.btn) {
-  color: #767676;
+  color: #000000;
 }
 .bg--white h1,
 .bg--white h2,
@@ -956,7 +956,7 @@ a {
 .imagebg:not(.image--light) .bg--white span,
 .imagebg:not(.image--light) .bg--white ul,
 .imagebg:not(.image--light) .bg--white a:not(.btn) {
-  color: #767676;
+  color: #000000;
 }
 .imagebg:not(.image--light) .bg--white h1,
 .imagebg:not(.image--light) .bg--white h2,
@@ -1403,7 +1403,7 @@ nav {
   padding-right: 0;
 }
 .nav-bar.bg--white .menu > li > a {
-  color: #767676;
+  color: #000000;
 }
 .nav-bar.bg--dark .menu > li > a {
   color: #fff;
@@ -4085,7 +4085,7 @@ input[type="tel"] {
   transition: 0.2s linear;
   -webkit-transition: 0.2s linear;
   -moz-transition: 0.2s linear;
-  color: #767676;
+  color: #000000;
   padding-left: 1.625em;
   padding-right: 1.625em;
   height: 52px;
@@ -5794,7 +5794,7 @@ section.features .feature-2 {
   border-color: #efefef;
 }
 .bg--dark .pricing-1 *:not(a) {
-  color: #767676;
+  color: #000000;
 }
 @media all and (max-width: 990px) {
   .pricing {
@@ -6001,7 +6001,7 @@ section.features .feature-2 {
   font-size: 0.625em;
   font-style: italic;
   display: inline-block;
-  color: #767676;
+  color: #000000;
 }
 .slider[data-items] .card {
   margin: 0 15px;
@@ -6051,7 +6051,7 @@ a .card {
 }
 a .card p,
 a .card span {
-  color: #767676;
+  color: #000000;
 }
 a .card:hover {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -6112,7 +6112,7 @@ a:active .card {
 }
 .card-4 .card__body h6:first-child {
   margin-bottom: 1.3em;
-  color: #767676;
+  color: #000000;
 }
 .card-4 .card__body h5 {
   font-weight: 400;
@@ -6209,9 +6209,7 @@ a:active .card {
 .card-8 .boxed {
   padding: 3.25em 4.875em;
 }
-.card-8 .card__title h6 {
-  opacity: .5;
-}
+
 .card-8 .card__title h3 {
   max-width: 75%;
   overflow: hidden;
@@ -6751,7 +6749,7 @@ iframe {
     padding: 1.625em 0;
   }
   .masonry__filters.masonry__filters--outside ul li {
-    color: #767676;
+    color: #000000;
   }
 }
 .row .masonry__filters {
