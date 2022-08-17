@@ -1,0 +1,21 @@
+- name: Homepage
+  url: http://localhost:7575
+- name: Pricing and Packaging
+  url: http://localhost:7575/packages-and-pricing
+- name: How it works
+  url: http://localhost:7575/how-it-works
+- name: Gallery
+  url: http://localhost:7575/gallery
+- name: Testimonials
+  url: http://localhost:7575/reviews
+- name: About me
+  url: http://localhost:7575/about-me
+- name: FAQs
+  url: http://localhost:7575/frequently-asked-questions
+- name: Blog
+  url: http://localhost:7575/blog
+- name: Contact Us
+  url: http://localhost:7575/contact-us
+  
+
+  

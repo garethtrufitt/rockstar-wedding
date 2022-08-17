@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start-dev": " source ./config && nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "percy": "npx percy snapshot snapshots.yml"
   },
   "engines": {
     "node": "16.x"
@@ -13,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@percy/cli": "^1.9.1",
     "contentful": "^4.3.0",
     "dotenv": "^16.0.1",
     "express": "^4.15.2",
