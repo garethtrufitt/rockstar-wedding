@@ -112,6 +112,10 @@ app.get('/blog/:slug', (req, res) => {
         });
 });
 
+app.get('/google53e1818726c58b8e.html', (req, res) => {
+    res.send('google-site-verification: google53e1818726c58b8e.html')
+})
+
 // Map the default pages
 data.pages.map(page => {
 
