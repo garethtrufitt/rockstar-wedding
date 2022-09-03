@@ -2,7 +2,18 @@
 Add your custom styles below
 ****************************/
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-weight: normal;
 }
 
@@ -35,9 +46,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   }
 }
 
-section, footer {
-    padding-top: 1.5em;
-    padding-bottom: 4em;
+section,
+footer {
+  padding-top: 1.5em;
+  padding-bottom: 4em;
 }
 
 .dashed-divider {
@@ -59,8 +71,9 @@ section, footer {
 .home-lead .lead,
 .home-lead .sublead {
   margin-top: 10px;
-  color: #00261C;
-  text-shadow: 1px 1px 0 rgba(255,255,255,0.6), 2px 2px 0 rgba(255,255,255,0.4), 3px 3px 0 rgba(255,255,255,0.2);
+  color: #00261c;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6),
+    2px 2px 0 rgba(255, 255, 255, 0.4), 3px 3px 0 rgba(255, 255, 255, 0.2);
 }
 
 .home-lead .lead {
@@ -75,6 +88,19 @@ section, footer {
 .home-lead .logo {
   max-width: 450px;
   width: 100%;
+}
+
+.home-lead .logo.mobile {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .home-lead .logo.mobile {
+    display: block;
+  }
+  .home-lead .logo.desktop {
+    display: none;
+  }
 }
 
 .cover-10 .logo {
@@ -99,7 +125,7 @@ section, footer {
 }
 
 .homepage-loc__desc {
-  float:right;
+  float: right;
   padding-left: 1em;
   width: 80%;
 }
@@ -144,12 +170,11 @@ section, footer {
 }
 
 .portfolio-item__title h5 {
-  background-color: rgba(0,34,26,0.5);
+  background-color: rgba(0, 34, 26, 0.5);
   font-size: 30px;
   font-weight: normal;
   padding: 5px 0;
 }
-
 
 .portfolio-item__logo {
   position: absolute;
@@ -193,7 +218,6 @@ section, footer {
 
 /* Fake Tabs */
 
-
 .fake-tabs > li {
   opacity: 1;
   pointer-events: none;
@@ -212,9 +236,10 @@ section, footer {
 
 /* button */
 
-.btn--primary, .btn--primary:visited {
-    background: rgb(0,28,38);
-    border-color: #000;
+.btn--primary,
+.btn--primary:visited {
+  background: rgb(0, 28, 38);
+  border-color: #000;
 }
 
 .btn.btn--primary {
@@ -230,7 +255,7 @@ section, footer {
 
 @media (max-width: 767px) {
   .testimonial-3 .testimonial__text {
-      margin-top: 1em;
+    margin-top: 1em;
   }
 }
 
@@ -266,7 +291,7 @@ iframe {
 /* FAQ Page */
 .question-link-wrapper {
   column-count: 2;
-  padding: 0 10px
+  padding: 0 10px;
 }
 
 @media all and (min-width: 768px) {
@@ -280,35 +305,32 @@ iframe {
   margin-bottom: 10px;
 }
 
+.question-item {
+  margin-bottom: 15px;
+  position: relative;
+  background: #fff;
+}
 
-  .question-item {
-    margin-bottom: 15px;
-    position: relative;
-    background: #fff;
-  }
-
-  .question-item:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 3px;
-    left: 0;
-    height: calc(1em + 35px);
-    background-color: #ccc;
-  }
-
+.question-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 3px;
+  left: 0;
+  height: calc(1em + 35px);
+  background-color: #ccc;
+}
 
 .question--link {
   width: 100%;
   padding: 15px;
   display: inline-block;
-  transition : background-color 200ms ease-out;
+  transition: background-color 200ms ease-out;
 }
-
 
 .question-item:hover,
 .question-item:focus {
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .question-item:hover:before,
@@ -327,12 +349,12 @@ iframe {
 }
 
 .question {
-    background: #fff;
-    break-inside: avoid;
-    padding: 20px 20px 0 20px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    border-left: 5px solid #ccc;
+  background: #fff;
+  break-inside: avoid;
+  padding: 20px 20px 0 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-left: 5px solid #ccc;
 }
 
 .question--title {
