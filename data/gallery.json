@@ -1,13 +1,6 @@
 {
   "gallery": [
     {
-      "mainName": "The Firths",
-      "subName": "Louise and Rachael",
-      "image": "gallery-firths",
-      "vimeoId": "302710392",
-      "package": "Vinyl"
-    },
-    {
       "mainName": "David and Allan",
       "subName": "David and Allan",
       "image": "gallery-allandavid",
@@ -15,18 +8,18 @@
       "package": "Unplugged"
     },
     {
+      "mainName": "The Firths",
+      "subName": "Louise and Rachael",
+      "image": "gallery-firths",
+      "vimeoId": "302710392",
+      "package": "Vinyl"
+    },
+    {
       "mainName": "The Morris-Patersons",
       "subName": "Tess and Morag",
       "image": "gallery-morris-patersons",
       "vimeoId": "233660853",
       "package": "Vinyl"
-    },
-    {
-      "mainName": "The Mitches",
-      "subName": "Anthony and Kayleigh",
-      "image": "wedding-mitch",
-      "vimeoId": "192507651",
-      "package": "Unplugged"
     },
     {
       "mainName": "The Truffs",
@@ -50,6 +43,13 @@
       "package": "Vinyl"
     },
     {
+      "mainName": "The Mitches",
+      "subName": "Anthony and Kayleigh",
+      "image": "wedding-mitch",
+      "vimeoId": "192507651",
+      "package": "Unplugged"
+    },
+    {
       "mainName": "The Smiths",
       "subName": "Donna and Stephen",
       "image": "gallery-smiths",
@@ -61,6 +61,13 @@
       "subName": "Kate and Joe",
       "image": "gallery-orourkes",
       "vimeoId": "235770703",
+      "package": "Cassette"
+    },
+    {
+      "mainName": "Pippa and Saul",
+      "subName": "Pippa and Saul",
+      "image": "gallery-pippa-and-saul",
+      "vimeoId": "435162264",
       "package": "Cassette"
     },
     {
