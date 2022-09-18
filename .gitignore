@@ -43,3 +43,5 @@ Temporary Items
 
 # End of https://www.toptal.com/developers/gitignore/api/macos
 public/.DS_Store
+public/img/.DS_Store
+public/.DS_Store
