@@ -20,7 +20,7 @@
                     {{#each aboutPageBits}}
                       <div class="feature">
                           {{#if this.fields.sectionImage.fields.file}}
-                            <img src="{{this.fields.sectionImage.fields.file.url}}" alt="">
+                            <img src="{{this.fields.sectionImage.fields.file.url}}?fm=jpg&fl=progressive" alt="">
                           {{/if}}
                           {{{this.fields.aboutSection}}}
                       </div>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="col-md-7 features__avatar">
                     {{#each sideImage}}
-                      <img alt="avatar" src="{{this.fields.file.url}}">
+                      <img alt="avatar" src="{{this.fields.file.url}}?fm=jpg&fl=progressive">
                       <br>
                     {{/each}}
                 </div>
