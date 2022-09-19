@@ -1107,6 +1107,9 @@ mr = (function(mr, $, window, document) {
             const urlFilter = window.location.hash.substring(1)
             if (options.includes(urlFilter)) {
                 masonry.isotope({filter: `.filter-${urlFilter}`});
+                const masonryFilter = $(`[data-masonry-filter="${urlFilter}"]`);
+                masonryFilter.siblings('li').removeClass('active');
+                masonryFilter.addClass('active');
             }
         });
 
