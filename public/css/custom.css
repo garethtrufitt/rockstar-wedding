@@ -360,3 +360,16 @@ iframe {
 .question--title {
   border-bottom: 1px solid #f6f6f6;
 }
+
+/* filters */
+
+.masonry__filters li.active:before {
+  content: '✪';
+  display: block;
+  position: absolute;
+  background: transparent;
+  width: 6px;
+  margin-left: -11px;
+  font-size: 12px;
+  font-style: normal;
+}
