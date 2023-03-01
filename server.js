@@ -116,6 +116,12 @@ app.get('/google53e1818726c58b8e.html', (req, res) => {
     res.send('google-site-verification: google53e1818726c58b8e.html')
 })
 
+let inMemory = 1;
+app.get('/testing-in-memory', (req, res) => {
+    res.send(inMemory);
+    inMemory++;
+})
+
 // Map the default pages
 data.pages.map(page => {
 
