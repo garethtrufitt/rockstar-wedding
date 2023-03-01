@@ -46,14 +46,14 @@ var app = express();
 var port = process.env.PORT || 7575;
 
 // set the view engine to handlebars
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 // make express look in the public directory for assets (css/js/img)
 app.use(express.static(__dirname + '/public'));
 
 // set the home page route
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
     res.render('index', {
         title: 'Rockstar Wedding. You Film. We Edit. Wedding videos with personality.',
         description: 'We make fun, alternative wedding videos that are packed with laughs, personality and ace music that reflects you as a couple and your wedding day!',
@@ -97,10 +97,10 @@ app.get('/blog/:slug', (req, res) => {
                     description: blogPosts.items[0].fields.listingSubtitle,
                     ogImage: (
                         blogPosts.items[0].fields.mainImage &&
-                            blogPosts.items[
-                                0
-                            ].fields.mainImage.fields.file.url ||
-                            '//rockstar.wedding/img/rockstar-wedding-sharer.png'
+                        blogPosts.items[
+                            0
+                        ].fields.mainImage.fields.file.url ||
+                        '//rockstar.wedding/img/rockstar-wedding-sharer.png'
                     ),
                     post: blogPosts.items[0].fields,
                     postBody: marked(blogPosts.items[0].fields.body)
@@ -117,8 +117,8 @@ app.get('/google53e1818726c58b8e.html', (req, res) => {
 })
 
 let inMemory = 1;
-app.get('/testing-in-memory', (req, res) => {
-    res.send(inMemory);
+app.get('/testing-in-memory.html', (req, res) => {
+    res.send('' + inMemory);
     inMemory++;
 })
 
@@ -131,44 +131,44 @@ data.pages.map(page => {
     });
 
     app.get('/' + page[0], (req, res) => {
-      Promise.all([
-          client.getEntries(),
-          getPageData({ client: client, contentfulPageId: page[1]})
+        Promise.all([
+            client.getEntries(),
+            getPageData({ client: client, contentfulPageId: page[1] })
         ])
-        .then(values => {
+            .then(values => {
 
-          var entries = values[0];
-          var pageDataFields = values[1];
-          // Get the page from the response
-          const fetchedPaged = getPage(entries, page[0]);
-          const pageFields = fetchedPaged[0] && fetchedPaged[0].fields || {};
-          const pageSpecificFields = getPageSpecificFields(page[0]);
-          // Render the page using the fields from the API response
-          res.render(
-              page[0],
-              Object.assign(
-                  {},
-                  {
-                      title: 'Rockstar Wedding',
-                      ogImage: '//rockstar.wedding/img/rockstar-wedding-sharer.png',
-                      description: 'Wedding videos with personality'
-                  },
-                  pageFields,
-                  pageSpecificFields,
-                  pageDataFields
-              )
-          );
+                var entries = values[0];
+                var pageDataFields = values[1];
+                // Get the page from the response
+                const fetchedPaged = getPage(entries, page[0]);
+                const pageFields = fetchedPaged[0] && fetchedPaged[0].fields || {};
+                const pageSpecificFields = getPageSpecificFields(page[0]);
+                // Render the page using the fields from the API response
+                res.render(
+                    page[0],
+                    Object.assign(
+                        {},
+                        {
+                            title: 'Rockstar Wedding',
+                            ogImage: '//rockstar.wedding/img/rockstar-wedding-sharer.png',
+                            description: 'Wedding videos with personality'
+                        },
+                        pageFields,
+                        pageSpecificFields,
+                        pageDataFields
+                    )
+                );
 
-        })
-        .catch(err => console.log(err))
+            })
+            .catch(err => console.log(err))
     });
 });
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
     res.status(404);
     res.render('404');
 });
 
-app.listen(port, function() {
+app.listen(port, function () {
     console.log('Our app is running on http://localhost:' + port);
 });
